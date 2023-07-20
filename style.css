@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.body {
+    background-color: black;
+    height: 100vh;
+
+
+    margin: 0px !important;
+    padding: 0px !important;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: hidden;
+}
+
+
+.my-logo-image {
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.nav-header {
+    margin-right: auto;
+}
+
+.My-logo-header {
+    font-family: Roboto;
+    color: black;
+    font-size: 30px;
+    font-style: bold;
+    text-decoration: none;
+
+
+}
+
+.navbar-items {
+    margin-left: auto;
+}
+
+.navbar-navigation-text {
+    color: black;
+    font-size: 25px;
+    font-family: Roboto;
+    margin-right: 25px;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.navbar-navigation-text:hover {
+    color: #025cd9;
+}
+
+.navbar-navigation-text:active:link {
+    color: #3B71CA;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.navbar-main {
+    background-color: white;
+    padding: 10px;
+    margin-top: -110px;
+
+
+}
+
+
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.navigation-items {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navigation-items:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #3B71CA;
+}
+
+.dropdown-content:hover {
+    background-color: white;
+    color: white;
+}
+
+
+
+
+/*   Banner Section    */
+
+.flip-box {
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    border: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    border: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: black;
+    border: none;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: black;
+    border: none;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.banner-main-container {
+    padding: 50px;
+    margin-top: 80px;
+
+}
+
+.my-image {
+    width: 270px;
+    border-radius: 400px;
+    overflow-wrap: break-word;
+    transition: 0.5s;
+}
+
+.my-image:hover {
+    transform: scale(1.1);
+}
+
+.my-logo-image {
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.homepage-text {
+    color: white;
+    font-family: Roboto;
+    overflow-wrap: break-word;
+}
+
+.my-name {
+    font-size: 40px;
+}
+
+.my-name:hover {
+    color: #3B71CA;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+
+}
+
+.hire-me-form-text {
+    text-align: left;
+}
+
+.banner-btn {
+    width: 150px;
+    transition: 0.6s;
+}
+
+.banner-btn:hover {
+    background-color: black;
+    color: #5886d1;
+    border: 3px solid #5886d1;
+}
+
+
+/*  About me section  */
+
+
+
+.about-me-head-text {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.about-me-text-para {
+    color: white;
+    font-family: Roboto;
+    font-size: 21px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 0px;
+
+}
+
+
+
+/*    Skills section    */
+
+
+.image {
+    width: 65px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.image:hover {
+    animation: shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-5deg);
+    }
+}
+
+.title {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.row-line {
+    margin-top: 10px;
+}
+
+.Technical-skills_heading {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.list-items {
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.Tech-header {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+
+}
+
+.skills-sub-cont {
+    transition: 0.5s;
+}
+
+.skills-sub-cont:hover {
+    transform: scale(1.2);
+}
+
+.Other-skills_heading {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*   Resume Section  */
+
+
+.card {
+    transition: 0.6s;
+}
+
+
+
+.Resume-main-headings {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 18px;
+    font-weight: 600;
+}
+
+
+/*  Projects Section  */
+
+
+.Projects-header {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.projects-title {
+    color: white;
+    font-family: Roboto;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.image-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    height: 270px;
+}
+
+.card-style {
+    padding: 30px;
+}
+
+/*   Certiicates section   */
+
+
+.Certificates-heading {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-weight: bold;
+
+}
+
+.Certificate-titles {
+    color: white;
+    font-family: Roboto;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.certificate-image {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.card-cont {
+    width: 100%;
+}
+
+
+/* internship section*/
+
+
+.verzeo-certificate {
+    width: 100%;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.Internships-head-text {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+
+}
+
+.headings {
+    font-family: Roboto;
+    color: white;
+    margin: 25px;
+    font-size: 40px;
+}
+
+.web-certificate {
+    width: 100%;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.ss {
+    height: 270px;
+}
+
+
+/*contact me section*/
+
+.Contact-me-heading {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.contact-me-icons-section {
+    margin-right: 25px;
+    margin-left: 56px;
+}
+
+.contact-me-text-section {
+    font-size: 20px;
+}
+
+.contact-form {
+    color: white;
+    padding: 10px;
+    padding-top: 10px;
+    border: 2px solid #5886d1;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact-form:hover {
+    box-shadow: 0 0 5px 5px #5886d1;
+}
+
+.form-label-text {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.get-in-touch-text {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+
+
+
+
+/*    Footer Section   */
+
+
+.cont-main {
+    padding: 20px;
+}
+
+.icons {
+    color: white;
+    display: inline-block;
+    background-color: #5886d1;
+    padding: 10px;
+    border-radius: 400px;
+    margin-right: 25px;
+    margin-bottom: none;
+    transition: 0.5s;
+}
+
+.icons:hover {
+    color: #5886d1;
+    background-color: white;
+    transform: scale(1.3);
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-end-header {
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+
+.footer-nav {
+    list-style-type: none;
+    color: white;
+}
+
+.about-me-text {
+    color: white;
+    font-family: Roboto;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.contact-me-text {
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.contact-me-icons {
+    margin-right: 18px;
+
+}
+
+.contact-me-head-text {
+    color: #5886d1;
+    font-family: Roboto;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+
+
+}
+
+.contact-footer {
+    padding: 10px;
+    text-align: left;
+}
+
+.list-1 {
+    list-style-type: none;
+
+    font-family: Roboto;
+    font-size: 17px;
+    text-align: left;
+
+
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 45px;
+    transition: 0.3s;
+
+}
+
+.a:hover {
+    color: #5886d1;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 5px;
+    transform: scale(5);
+}
+
+.form {
+    color: white;
+    text-align: left;
+
+    margin-top: 0px;
+
+}
